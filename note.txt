@@ -1,0 +1,5 @@
+functions
+
+.pop() delete the last element from an array and return its value
+.unshift() insert new element at the start of an array
+.push() at the end
