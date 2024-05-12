@@ -91,6 +91,7 @@ function getCaloriesFromInputs(list) {
       isError = true;
       return null;
     }
+    //convert bool(1 or 0), string or date into number
     calories += Number(currVal);
   }
   return calories;
@@ -98,8 +99,10 @@ function getCaloriesFromInputs(list) {
 }
 
 function clearForm() {
+  //contains every input-container
   const inputContainers = Array.from(document.querySelectorAll('.input-container'));
-
+  
+  // console.log(inputContainers)
   for (const container of inputContainers) {
     container.innerHTML = '';
   }

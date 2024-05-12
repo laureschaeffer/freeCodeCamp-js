@@ -1,5 +1,7 @@
 # FreeCodeCamp - JavaScript Algorithms and Data Structures
 
+⚡ **Certification n°1** : Build a palindrome checker project
+
 **Ex1** : Build a Pyramid Generator  
 ✍️ Learn Introductory JavaScript
 
