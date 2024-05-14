@@ -190,3 +190,14 @@ typeOfSport.textContent = sport;
 teamName.textContent = team;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
+
+//show player cards based on the selections made by the user in the Filter Teammates dropdown menu
+const setPlayerCards = (arr = players) => {
+    playerCards.innerHTML += arr.map(
+        ({ name, position, number, isCaptain, nickname }) => {
+            `<div class="player-card">
+                <h2>${name}</h2>
+            </div>`
+        }
+      );
+};
