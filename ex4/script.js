@@ -192,12 +192,21 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 //show player cards based on the selections made by the user in the Filter Teammates dropdown menu
+//The .map() method will return a new array of player-card items separated by commas. To remove the commas between each player-card so it does not show up on screen, chain the .join() method to the .map() method
 const setPlayerCards = (arr = players) => {
     playerCards.innerHTML += arr.map(
         ({ name, position, number, isCaptain, nickname }) => {
             `<div class="player-card">
-                <h2>${name}</h2>
+              <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+              <p>Position: ${position}</p>
+              <p>Number: ${number}</p>
+              <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
             </div>`
         }
-      );
+      ).join("")
 };
+
+//detect when the user makes a selection
+playersDropdownList.addEventListener("change", () => {
+
+});
