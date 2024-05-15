@@ -207,6 +207,35 @@ const setPlayerCards = (arr = players) => {
 };
 
 //detect when the user makes a selection
-playersDropdownList.addEventListener("change", () => {
-
+//e represents an object which contains the information for that event.
+//e.target.value represents the value property from the playersDropdownList element
+playersDropdownList.addEventListener("change", (e) => {
+  // console.log(e.target.value)
+    
+    playerCards.innerHTML = "";
+    switch (e.target.value) {
+      case "nickname":
+        setPlayerCards(players.filter((player) => player.nickname !== null));
+        break;
+      case "forward":
+        setPlayerCards(players.filter((player) => player.position === "forward"));
+        break;
+      case "midfielder":
+        setPlayerCards(
+          players.filter((player) => player.position === "midfielder")
+        );
+        break;
+      case "defender":
+        setPlayerCards(
+          players.filter((player) => player.position === "defender")
+        );
+        break;
+      case "goalkeeper":
+        setPlayerCards(
+          players.filter((player) => player.position === "goalkeeper")
+        );
+        break;
+        default:
+  setPlayerCards()
+      }
 });
