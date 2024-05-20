@@ -13,3 +13,6 @@
 
 **Ex4** : Football team Cards  
 ⚽ Learn Modern JavaScript Methods by Building Football Team Cards
+
+**Ex5** : Todo card  
+☑️ Learn localStorage by Building a Todo App
