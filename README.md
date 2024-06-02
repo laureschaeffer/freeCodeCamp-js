@@ -16,3 +16,6 @@
 
 **Ex5** : Todo card  
 ☑️ Learn localStorage by Building a Todo App
+
+**Ex6** : Decimal to Binary Converter
+🔎Learn Recursion by Building a Decimal to Binary Converter
